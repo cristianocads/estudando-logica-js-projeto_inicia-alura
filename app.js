@@ -1,0 +1,1 @@
+alert("Vai estudar cara!");
