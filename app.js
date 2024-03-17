@@ -25,11 +25,15 @@ while (chute != numeroSecreto){
     //tentativas = tentativas + 1;
     tentativas++
 }
-if (tentativas > 1) {
-    alert(`Isso aí! Você acertou o número ${numeroSecreto} com ${tentativas} tentativas.`);
-} else {
-    alert(`Isso aí! Você acertou o número ${numeroSecreto} com ${tentativas} tentativa.`);
-}
+// Operador ternário
+// tentativas é maior que 1, se sim , A senão(:) B
+let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
+alert(`Isso aí! Você acertou o número ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
+// if (tentativas > 1) {
+//     alert(`Isso aí! Você acertou o número ${numeroSecreto} com ${tentativas} tentativas.`);
+// } else {
+//     alert(`Isso aí! Você acertou o número ${numeroSecreto} com ${tentativas} tentativa.`);
+// }
 
 // Exercício 2
 // Adicionando uma condicional para dia de semana.
