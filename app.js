@@ -3,6 +3,7 @@ let numeroSecreto = 29;
 console.log(numeroSecreto);
 let chute ;
 console.log('Valor do chute:', chute);
+let tentativas = 1;
 
 
 // Enquanto
@@ -12,7 +13,7 @@ while (chute != numeroSecreto){
     chute = prompt("Escolha um número entre 1 e 30");
 
     if (chute == numeroSecreto) {
-        alert(`Isso aí! Você acertou o número ${numeroSecreto}`);
+        alert(`Isso aí! Você acertou o número ${numeroSecreto} com ${tentativas} tentativas`);
     } else {
         if (chute > numeroSecreto) {
             alert(`O número secreto é menor que ${chute}`);
@@ -21,6 +22,8 @@ while (chute != numeroSecreto){
         }
         alert("Você errou:(")
     }
+    //tentativas = tentativas + 1;
+    tentativas++
 }
 
 
