@@ -13,7 +13,7 @@ while (chute != numeroSecreto){
     chute = prompt("Escolha um número entre 1 e 30");
 
     if (chute == numeroSecreto) {
-        alert(`Isso aí! Você acertou o número ${numeroSecreto} com ${tentativas} tentativas`);
+        break;
     } else {
         if (chute > numeroSecreto) {
             alert(`O número secreto é menor que ${chute}`);
@@ -25,7 +25,11 @@ while (chute != numeroSecreto){
     //tentativas = tentativas + 1;
     tentativas++
 }
-
+if (tentativas > 1) {
+    alert(`Isso aí! Você acertou o número ${numeroSecreto} com ${tentativas} tentativas.`);
+} else {
+    alert(`Isso aí! Você acertou o número ${numeroSecreto} com ${tentativas} tentativa.`);
+}
 
 // Exercício 2
 // Adicionando uma condicional para dia de semana.
