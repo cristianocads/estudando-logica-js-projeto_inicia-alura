@@ -1,5 +1,5 @@
 alert("Jogo qual é o número");
-let numeroSecreto = 29;
+let numeroSecreto = parseInt(Math.random() * 30 + 1);
 console.log(numeroSecreto);
 let chute ;
 console.log('Valor do chute:', chute);
@@ -25,6 +25,8 @@ while (chute != numeroSecreto){
     //tentativas = tentativas + 1;
     tentativas++
 }
+
+
 // Operador ternário
 // tentativas é maior que 1, se sim , A senão(:) B
 let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
